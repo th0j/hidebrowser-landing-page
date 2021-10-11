@@ -3,3 +3,40 @@
 @tailwind components;
 
 @tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap');
+
+body {
+  font-family: 'DM Sans';
+}
+
+.landing-gradient {
+  
+background: linear-gradient(
+ to right, #11998e, #38ef7d);;
+}
+
+
+.footer-title {
+  @apply text-black text-xl font-medium pb-4 uppercase
+}
+
+.footer li{
+  @apply py-2 text-lg
+}
+
+.footer-trial {
+  background: linear-gradient(
+    to right, #11998e, #38ef7d);;
+  height: 285px;
+  border-radius: 15px;
+}
+
+
+.footer-left {
+  background-repeat: no-repeat;
+  background-position: 50% 80%;
+  padding-left: 4%;
+  
+
+}
