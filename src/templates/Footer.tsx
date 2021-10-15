@@ -1,11 +1,10 @@
 import Link from 'next/link';
 
-import { Background } from '../background/Background';
 import { Button } from '../button/Button';
 import { Section } from '../layout/Section';
 
 const Footer = () => (
-  <Background color="bg-gray-100">
+  <>
     <Section>
       {/* <CenteredFooter
         
@@ -90,7 +89,7 @@ const Footer = () => (
         Copyright ©2021 Hidebrowser. All rights reserved
       </div>
     </Section>
-  </Background>
+  </>
 );
 
 export { Footer };
