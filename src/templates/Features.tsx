@@ -1,5 +1,19 @@
 import React from 'react';
 
+import SwiperCore, {
+  Pagination,
+  Navigation,
+  EffectFade,
+  Autoplay,
+} from 'swiper';
+import { Swiper, SwiperSlide } from 'swiper/react';
+
+import 'swiper/css';
+import 'swiper/css/pagination';
+import 'swiper/css/navigation';
+
+SwiperCore.use([Pagination, Navigation, EffectFade, Autoplay]);
+
 const Features = () => (
   <div>
     {/* <div className="container mx-auto">
@@ -34,6 +48,35 @@ const Features = () => (
         </div>
       </div>
     </div> */}
+    <div className="landing-gradient my-8 py-14">
+      <div className="container mx-auto flex px-16  text-white">
+        <div className="px-16">
+          <div className="font-bold text-3xl tracking-wider">
+            Manage Fingerprint
+          </div>
+          <div className="py-4 text-lg">
+            Customize each parameter of your fingerprint. More than 50
+            connection characteristics are currently available.
+          </div>
+        </div>
+        <div className="px-16">
+          <div className="font-bold text-3xl tracking-wider">
+            Separated Profiles
+          </div>
+          <div className="py-4 text-lg">
+            Each browser profile is located separately in your cloud or localy,
+            guaranteeing the protection of your data and web anonymity.
+          </div>
+        </div>
+        <div className="px-16">
+          <div className="font-bold text-3xl tracking-wider">Teamwork</div>
+          <div className="py-4 text-lg">
+            Convenient ecosystem for effective teamwork. Share profiles and
+            proxies and assign rights to each team member.
+          </div>
+        </div>
+      </div>
+    </div>
 
     <div className="container mx-auto pb-16">
       <div className="flex items-center">
@@ -45,23 +88,17 @@ const Features = () => (
             <div className="text-center">Using physical devices or VPS</div>
           </div>
 
-          <img
-            alt=""
-            src="https://multilogin.com/wp-content/themes/multilogin/dist/images/oldway_4bcf34d5.svg"
-          />
+          <img alt="" src="assets/images/oldway.svg" />
         </div>
         <div className="mx-auto">
           <div className="pb-4">
             <div className="text-3xl font-semibold text-black text-center">
               THE NEW WAY
             </div>
-            <div className="text-center">Using Physical device simulation</div>
+            <div className="text-center">Using device simulation</div>
           </div>
 
-          <img
-            alt=""
-            src="https://multilogin.com/wp-content/themes/multilogin/dist/images/newway_4190ed93.svg"
-          />
+          <img alt="" src="assets/images/newway.svg" />
         </div>
       </div>
     </div>
@@ -93,12 +130,12 @@ const Features = () => (
           </div>
         </div>
         <div className="mx-auto">
-          <img alt="" src="https://lcdn.gologin.com/img/fingerprintText.webp" />
+          <img alt="" src="assets/images/fingerprintText.webp" />
         </div>
       </div>
     </div>
 
-    <div className="container mx-auto px-32">
+    {/* <div className="container mx-auto px-32">
       <div className="grid grid-cols-2 py-16">
         <div className="mx-auto">
           <img alt="" src="https://lcdn.gologin.com/img/fingerprint.svg" />
@@ -125,26 +162,46 @@ const Features = () => (
           </div>
         </div>
       </div>
-    </div>
+    </div> */}
 
-    <div className="landing-gradient">
-      <div className="container px-16 grid grid-cols-2  py-16">
-        <div className=" mb-12">
+    <div className="container mx-auto p-16">
+      {/* <div className="container mx-auto p-16 grid grid-cols-2 gap-x-10"> */}
+      <div className="flex flex-wrap items-center">
+        <div className="lg:w-1/2">
+          <Swiper
+            pagination={{ clickable: true }}
+            autoplay={{
+              delay: 2500,
+            }}
+            loop={true}
+          >
+            {/* <SwiperSlide>
+              <img src="https://lcdn.gologin.com/img/glslider1.webp" alt="" />
+            </SwiperSlide> */}
+            <SwiperSlide>
+              <img src="assets/images/hb-2.png" alt="" />
+            </SwiperSlide>
+            <SwiperSlide>
+              <img src="assets/images/hb-3.png" alt="" />
+            </SwiperSlide>
+          </Swiper>
+        </div>
+        <div className="lg:w-1/2 p-8">
           <div>
-            <span className="text-3xl font-semibold text-white ">
-              What is Anti-Detect Browser?
+            <span className="text-3xl font-semibold text-black ">
+              What is Hidebrowser?
             </span>
           </div>
 
           <div>
-            <p className="text-white text-lg leading-8 p-2">
+            <p className="text-black text-lg leading-8 p-2">
               Hidebrowser is software that lets you hide and control your
               digital fingerprint by spoofing all parameters that sites can see.
               By masking these settings, you can imitate a real Internet
               identity to bypass anti-fraud systems.
             </p>
 
-            <p className="text-white text-lg leading-8 p-2">
+            <p className="text-black text-lg leading-8 p-2">
               Hidebrowser helps you create a large number of profiles and each
               of them will have its own digital fingerprint. These profiles do
               not overlap with each other, so websites will not ban your
@@ -152,9 +209,6 @@ const Features = () => (
               Internet.
             </p>
           </div>
-        </div>
-        <div>
-          {/* <img alt="" src="https://lcdn.gologin.com/img/fingerprintText.webp" /> */}
         </div>
       </div>
     </div>

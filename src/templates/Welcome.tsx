@@ -3,7 +3,7 @@ import React from 'react';
 import Link from 'next/link';
 
 const Welcome = () => (
-  <div>
+  <div className="section-top-a">
     <div className=""></div>
     <div className="flex-grow">
       <div className="container mx-auto flex px-5 pt-32 items-center justify-center flex-col">
