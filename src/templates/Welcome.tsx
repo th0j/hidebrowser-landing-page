@@ -3,10 +3,10 @@ import React from 'react';
 import Link from 'next/link';
 
 const Welcome = () => (
-  <div className="section-top-b">
+  <div>
     <div className=""></div>
-    <div className="flex-grow ">
-      <div className="container mx-auto flex px-5 py-32 items-center justify-center flex-col">
+    <div className="flex-grow">
+      <div className="container mx-auto flex px-5 pt-32 items-center justify-center flex-col">
         <div className="text-center xl:w-2/3 md:w-4/5 w-full">
           <h1 className="text-5xl text-gray-900 font-bold whitespace-pre-line leading-hero">
             <h1 className="heading">ANTI DETECT BROWSER</h1>
@@ -21,7 +21,7 @@ const Welcome = () => (
           <div className="flex justify-center flex-col space-y-4 py-6">
             <div>
               <Link href="#">
-                <a className="inline-flex text-center text-lg text-white bg-green-600 py-3 pl-5 pr-5 hover:bg-green-700">
+                <a className="inline-flex text-center text-lg py-3 pl-5 pr-5 btn tracking-widest">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     className="h-6 w-6 mr-3"
@@ -36,7 +36,7 @@ const Welcome = () => (
                       d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"
                     />
                   </svg>
-                  Download Now
+                  Download for Windows
                 </a>
               </Link>
             </div>

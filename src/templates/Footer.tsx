@@ -1,51 +1,47 @@
 import Link from 'next/link';
 
-import { Button } from '../button/Button';
-import { Section } from '../layout/Section';
+import { Logo } from './Logo';
 
 const Footer = () => (
-  <>
-    <Section>
-      {/* <CenteredFooter
-        
-        iconList={
-          <>
-            <Link href="/">
-              <a>
-                <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M23.998 12c0-6.628-5.372-12-11.999-12C5.372 0 0 5.372 0 12c0 5.988 4.388 10.952 10.124 11.852v-8.384H7.078v-3.469h3.046V9.356c0-3.008 1.792-4.669 4.532-4.669 1.313 0 2.686.234 2.686.234v2.953H15.83c-1.49 0-1.955.925-1.955 1.874V12h3.328l-.532 3.469h-2.796v8.384c5.736-.9 10.124-5.864 10.124-11.853z" />
-                </svg>
-              </a>
-            </Link>
-
-            <Link href="/">
-              <a>
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-                  <path d="M23.495 6.205a3.007 3.007 0 00-2.088-2.088c-1.87-.501-9.396-.501-9.396-.501s-7.507-.01-9.396.501A3.007 3.007 0 00.527 6.205a31.247 31.247 0 00-.522 5.805 31.247 31.247 0 00.522 5.783 3.007 3.007 0 002.088 2.088c1.868.502 9.396.502 9.396.502s7.506 0 9.396-.502a3.007 3.007 0 002.088-2.088 31.247 31.247 0 00.5-5.783 31.247 31.247 0 00-.5-5.805zM9.609 15.601V8.408l6.264 3.602z" />
-                </svg>
-              </a>
-            </Link>
-          </>
-        }
-      ></CenteredFooter> */}
-
-      <div className="footer-trial container grid grid-cols-1 gap-2 py-4 mb-16">
+  <div className="bg-gray-50">
+    <div className="max-w-screen-lg mx-auto px-3 pb-2 pt-16">
+      <div className="footer-trial container grid grid-cols-1 gap-2 py-4">
         <div className="footer-left mx-auto text-center">
-          <div className="text-5xl text-white uppercase">Ready to dive in?</div>
-          <div className="text-5xl text-yellow-300 uppercase">
+          <div className="text-4xl text-white uppercase">Ready to dive in?</div>
+          <div className="text-4xl text-yellow-300 uppercase">
             Start your free trial today.
           </div>
           <p className="text-gray-200 text-2xl py-4">
             We have a free 7-day trial period with full access to all functions
           </p>
-          <Button>DOWNLOAD NOW</Button>
+          <Link href="#">
+            <a className="inline-flex text-center text-lg py-3 pl-5 pr-5 btn tracking-widest">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                className="h-6 w-6 mr-3"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth="2"
+                  d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"
+                />
+              </svg>
+              Download for Windows
+            </a>
+          </Link>
         </div>
 
         <div></div>
       </div>
 
-      <div className="footer grid grid-cols-5 gap-4">
-        <div className="col-span-2">HIDEBROWSER</div>
+      <div className="footer grid grid-cols-5 gap-4 mt-32">
+        <div className="col-span-2">
+          <Logo />
+        </div>
 
         <div className="text-left">
           <div className="footer-title">HIDEBROWSER</div>
@@ -89,10 +85,10 @@ const Footer = () => (
         </div>
       </div>
       <div className="mt-4 pt-4">
-        Copyright ©2021 Hidebrowser. All rights reserved
+        Copyright ©2021 Hidebrowser Inc. All rights reserved
       </div>
-    </Section>
-  </>
+    </div>
+  </div>
 );
 
 export { Footer };
