@@ -31,8 +31,11 @@ const Footer = () => (
 
       <div className="footer-trial container grid grid-cols-1 gap-2 py-4 mb-16">
         <div className="footer-left mx-auto text-center">
-          <div className="text-6xl text-white uppercase">Try Free Trial</div>
-          <p className="text-black text-2xl py-4">
+          <div className="text-5xl text-white uppercase">Ready to dive in?</div>
+          <div className="text-5xl text-yellow-300 uppercase">
+            Start your free trial today.
+          </div>
+          <p className="text-gray-200 text-2xl py-4">
             We have a free 7-day trial period with full access to all functions
           </p>
           <Button>DOWNLOAD NOW</Button>

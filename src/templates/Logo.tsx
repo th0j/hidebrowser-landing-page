@@ -1,5 +1,3 @@
-import { AppConfig } from '../utils/AppConfig';
-
 type ILogoProps = {
   xl?: boolean;
 };
@@ -17,7 +15,8 @@ const Logo = (props: ILogoProps) => {
         width="50px"
         className="logo"
       />
-      {AppConfig.site_name}
+      {/* {AppConfig.site_name} */}
+      HIDEBROWSER
     </span>
   );
 };

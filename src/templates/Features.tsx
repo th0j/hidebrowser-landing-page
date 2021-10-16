@@ -2,7 +2,7 @@ import React from 'react';
 
 const Features = () => (
   <div>
-    <div className="container mx-auto">
+    {/* <div className="container mx-auto">
       <div className="grid grid-cols-2 py-16 ">
         <div className="mx-auto">
           <img alt="" src="https://lcdn.gologin.com/img/anim-page.webp" />
@@ -31,6 +31,37 @@ const Features = () => (
               easily come to an end.
             </p>
           </div>
+        </div>
+      </div>
+    </div> */}
+
+    <div className="container mx-auto pb-16">
+      <div className="flex items-center">
+        <div className="mx-auto">
+          <div className="pb-4">
+            <div className="text-3xl font-semibold text-black text-center">
+              THE OLD WAY
+            </div>
+            <div className="text-center">Using physical devices or VPS</div>
+          </div>
+
+          <img
+            alt=""
+            src="https://multilogin.com/wp-content/themes/multilogin/dist/images/oldway_4bcf34d5.svg"
+          />
+        </div>
+        <div className="mx-auto">
+          <div className="pb-4">
+            <div className="text-3xl font-semibold text-black text-center">
+              THE NEW WAY
+            </div>
+            <div className="text-center">Using Physical device simulation</div>
+          </div>
+
+          <img
+            alt=""
+            src="https://multilogin.com/wp-content/themes/multilogin/dist/images/newway_4190ed93.svg"
+          />
         </div>
       </div>
     </div>
@@ -123,7 +154,7 @@ const Features = () => (
           </div>
         </div>
         <div>
-          <img alt="" src="https://lcdn.gologin.com/img/fingerprintText.webp" />
+          {/* <img alt="" src="https://lcdn.gologin.com/img/fingerprintText.webp" /> */}
         </div>
       </div>
     </div>

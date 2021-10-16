@@ -3,11 +3,11 @@ import React from 'react';
 import Link from 'next/link';
 
 const Welcome = () => (
-  <div className="main-screen flex">
-    <div className="flex-grow">
-      <div className="container mx-auto flex px-5 py-24 items-center justify-center flex-col">
+  <div className="section-top-b">
+    <div className=""></div>
+    <div className="flex-grow ">
+      <div className="container mx-auto flex px-5 py-32 items-center justify-center flex-col">
         <div className="text-center xl:w-2/3 md:w-4/5 w-full">
-          {/* <div> */}
           <h1 className="text-5xl text-gray-900 font-bold whitespace-pre-line leading-hero">
             <h1 className="heading">ANTI DETECT BROWSER</h1>
             <span className="text-primary-500">
@@ -18,7 +18,7 @@ const Welcome = () => (
             Create and manage multi-session browsing identities on your computer
           </div>
 
-          <div className="flex justify-center flex-col space-y-4">
+          <div className="flex justify-center flex-col space-y-4 py-6">
             <div>
               <Link href="#">
                 <a className="inline-flex text-center text-lg text-white bg-green-600 py-3 pl-5 pr-5 hover:bg-green-700">
