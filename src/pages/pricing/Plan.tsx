@@ -1,5 +1,7 @@
 import React from 'react';
 
+import { AppConfig } from '../../utils/AppConfig';
+
 const Feature = (props: any) => {
   return (
     <p className="py-2 tracking-wider">
@@ -21,17 +23,6 @@ const Feature = (props: any) => {
   );
 };
 
-const renderFeature = (props: any) => {
-  if (props.features) {
-    return props.features.map((feature: string, index: number) => (
-      <div key={index}>
-        <Feature>{feature}</Feature>
-      </div>
-    ));
-  }
-  return '';
-};
-
 const Plan = (props: any) => {
   const borderColor = props.primary
     ? 'border-2 border-yellow-500'
@@ -49,6 +40,17 @@ const Plan = (props: any) => {
     ? 'bg-yellow-500 text-white'
     : 'bg-yellow-200 text-yellow-500';
 
+  const renderFeature = () => {
+    if (props.features) {
+      return props.features.map((feature: string, index: number) => (
+        <div key={index}>
+          <Feature>{feature}</Feature>
+        </div>
+      ));
+    }
+    return '';
+  };
+
   return (
     <div className="text-gray-900 ">
       <div
@@ -64,14 +66,17 @@ const Plan = (props: any) => {
           </div>
         </div>
         <hr className="my-6 text-gray-300" />
-        <div className="h-80 w-80">{renderFeature}</div>
+        <div className="h-80 w-80">{renderFeature()}</div>
 
         <div className="text-center">
-          <button
+          <a
             className={`${primaryChoose} tracking-wider font-bold py-2 px-4 w-full rounded-lg`}
+            type="button"
+            download
+            href={`/${AppConfig.app_version}`}
           >
             SELECT PLAN
-          </button>
+          </a>
         </div>
       </div>
     </div>

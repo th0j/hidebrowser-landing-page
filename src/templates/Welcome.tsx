@@ -1,5 +1,7 @@
 import React from 'react';
 
+import { AppConfig } from '../utils/AppConfig';
+
 const Welcome = () => (
   <div className="section-top-a">
     <div className=""></div>
@@ -20,7 +22,7 @@ const Welcome = () => (
             <div>
               <a
                 className="inline-flex text-center text-lg py-3 pl-5 pr-5 btn tracking-widest"
-                href="/hidebrowser_setup-1.7.2.zip"
+                href={`/${AppConfig.app_version}`}
                 download
               >
                 <svg

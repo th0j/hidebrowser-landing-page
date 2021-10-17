@@ -1,5 +1,6 @@
 import Link from 'next/link';
 
+import { AppConfig } from '../utils/AppConfig';
 import { Logo } from './Logo';
 
 const Footer = () => (
@@ -16,7 +17,7 @@ const Footer = () => (
           </p>
           <a
             className="inline-flex text-center text-lg py-3 pl-5 pr-5 btn tracking-widest"
-            href="/hidebrowser_setup-1.7.2.zip"
+            href={`/${AppConfig.app_version}`}
             download
           >
             <svg

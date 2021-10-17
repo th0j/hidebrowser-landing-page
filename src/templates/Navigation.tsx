@@ -1,6 +1,7 @@
 import Link from 'next/link';
 
 import { NavbarTwoColumns } from '../navigation/NavbarTwoColumns';
+import { AppConfig } from '../utils/AppConfig';
 import { Logo } from './Logo';
 
 const Navigation = () => {
@@ -26,7 +27,7 @@ const Navigation = () => {
           <li>
             <a
               className="inline-flex items-center bg-yellow-300 rounded py-1 px-4"
-              href="/hidebrowser_setup-1.7.2.zip"
+              href={`/${AppConfig.app_version}`}
               download
             >
               <svg
