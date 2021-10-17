@@ -6,7 +6,8 @@
       "error",
       {
         "singleQuote": true
-      }
+      },
+      { "endOfLine": "auto" }
     ]
   },
   "overrides": [
@@ -23,12 +24,6 @@
         "project": "./tsconfig.json"
       },
       "rules": {
-        "prettier/prettier": [
-          "error",
-          {
-            "singleQuote": true
-          }
-        ],
         "react/destructuring-assignment": "off", // Vscode doesn't support automatically destructuring, it's a pain to add a new variable
         "jsx-a11y/anchor-is-valid": "off", // Next.js use his own internal link system
         "react/require-default-props": "off", // Allow non-defined react props as undefined
@@ -61,7 +56,8 @@
           "error",
           { "argsIgnorePattern": "^_" }
         ],
-        "@typescript-eslint/no-unused-expressions": 0
+        "@typescript-eslint/no-unused-expressions": 0,
+        "@next/next/no-document-import-in-page": 0
       }
     }
   ]

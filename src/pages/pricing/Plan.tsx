@@ -21,6 +21,17 @@ const Feature = (props: any) => {
   );
 };
 
+const renderFeature = (props: any) => {
+  if (props.features) {
+    return props.features.map((feature: string, index: number) => (
+      <div key={index}>
+        <Feature>{feature}</Feature>
+      </div>
+    ));
+  }
+  return '';
+};
+
 const Plan = (props: any) => {
   const borderColor = props.primary
     ? 'border-2 border-yellow-500'
@@ -53,13 +64,7 @@ const Plan = (props: any) => {
           </div>
         </div>
         <hr className="my-6 text-gray-300" />
-        <div className="h-80 w-80">
-          {props.features.map((feature: string, index: number) => (
-            <div key={index}>
-              <Feature>{feature}</Feature>
-            </div>
-          ))}
-        </div>
+        <div className="h-80 w-80">{renderFeature}</div>
 
         <div className="text-center">
           <button
