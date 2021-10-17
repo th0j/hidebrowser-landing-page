@@ -1,7 +1,5 @@
 import React from 'react';
 
-import Link from 'next/link';
-
 const Welcome = () => (
   <div className="section-top-a">
     <div className=""></div>
@@ -20,25 +18,27 @@ const Welcome = () => (
 
           <div className="flex justify-center flex-col space-y-4 py-6">
             <div>
-              <Link href="#">
-                <a className="inline-flex text-center text-lg py-3 pl-5 pr-5 btn tracking-widest">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    className="h-6 w-6 mr-3"
-                    fill="none"
-                    viewBox="0 0 24 24"
-                    stroke="currentColor"
-                  >
-                    <path
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      strokeWidth="2"
-                      d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"
-                    />
-                  </svg>
-                  Download for Windows
-                </a>
-              </Link>
+              <a
+                className="inline-flex text-center text-lg py-3 pl-5 pr-5 btn tracking-widest"
+                href="/hidebrowser_setup-1.7.2.zip"
+                download
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  className="h-6 w-6 mr-3"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth="2"
+                    d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"
+                  />
+                </svg>
+                Download for Windows
+              </a>
             </div>
             <h6>Fully support Windows, Apple M1 & macOS Big Sur & Monterey!</h6>
           </div>
