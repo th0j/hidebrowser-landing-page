@@ -36,7 +36,7 @@ const Plan = (props: any) => {
 
   const primaryChoose = props.primary
     ? 'bg-yellow-500 text-white'
-    : 'bg-yellow-200 text-yellow-500 ';
+    : 'bg-yellow-200 text-yellow-500';
 
   return (
     <div className="text-gray-900 ">
@@ -46,7 +46,12 @@ const Plan = (props: any) => {
         {popular}
         <div className="text-3xl">{props.name}</div>
         {/* <div>For freelanceers that need unique Internet identities</div> */}
-        <div className="text-5xl">{props.price}/mo.</div>
+        <div className="flex items-center justify-between">
+          <div className="text-5xl">{props.price}/mo.</div>
+          <div>
+            <s className="text-2xl text-gray-500">{props.compareAtPrice}/mo.</s>
+          </div>
+        </div>
         <hr className="my-6 text-gray-300" />
         <div className="h-80 w-80">
           {props.features.map((feature: string, index: number) => (

@@ -6,6 +6,7 @@ const plans = [
   {
     name: 'Starter',
     price: '5$',
+    compareAtPrice: '9$',
     features: [
       '20 Browser Profiles',
       'Fingerprints Database',
@@ -17,6 +18,7 @@ const plans = [
   {
     name: 'Solo',
     price: '15$',
+    compareAtPrice: '29$',
     features: [
       '100 Browser Profiles',
       'Fingerprints Database',
@@ -30,6 +32,7 @@ const plans = [
   {
     name: 'Professional',
     price: '24$',
+    compareAtPrice: '49$',
     features: [
       '200 Browser Profiles',
       'Fingerprints Database',
@@ -43,6 +46,7 @@ const plans = [
   {
     name: 'Business',
     price: '49$',
+    compareAtPrice: '99$',
     features: [
       '500 Browser Profiles',
       'Fingerprints Database',
@@ -57,10 +61,13 @@ const plans = [
 
 const Main = () => {
   return (
-    <div className="pb-16">
-      <div className="flex-grow">
-        <div className="container mx-auto items-center justify-center flex flex-col text-3xl text-gray-900 p-8">
+    <div className="py-16">
+      <div className="container mx-auto items-center justify-center flex flex-col p-8">
+        <div className="text-3xl text-gray-900 font-bold tracking-wider">
           PLAN & PRICING
+        </div>
+        <div className="text-xl text-gray-500 font-light tracking-wider">
+          Get Discount Up To 50%!
         </div>
       </div>
 
@@ -71,6 +78,7 @@ const Main = () => {
               <div key={plan.name}>
                 <Plan
                   price={plan.price}
+                  compareAtPrice={plan.compareAtPrice}
                   features={plan.features}
                   name={plan.name}
                   primary
@@ -80,6 +88,7 @@ const Main = () => {
               <div key={plan.name}>
                 <Plan
                   price={plan.price}
+                  compareAtPrice={plan.compareAtPrice}
                   features={plan.features}
                   name={plan.name}
                 ></Plan>
