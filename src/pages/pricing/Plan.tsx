@@ -73,4 +73,4 @@ const Plan = (props: any) => {
   );
 };
 
-export { Plan };
+export default Plan;

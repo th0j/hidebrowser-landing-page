@@ -4,7 +4,7 @@ import { Meta } from '../../layout/Meta';
 import { Footer } from '../../templates/Footer';
 import { Navigation } from '../../templates/Navigation';
 import { AppConfig } from '../../utils/AppConfig';
-import { Main } from './Main';
+import Main from './Main';
 
 const Index = () => {
   return (

@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { Plan } from './Plan';
+import Plan from './Plan';
 
 const plans = [
   {
@@ -101,4 +101,4 @@ const Main = () => {
   );
 };
 
-export { Main };
+export default Main;
