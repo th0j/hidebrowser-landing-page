@@ -6,7 +6,7 @@ import { Logo } from './Logo';
 const Footer = () => (
   <div className="bg-gray-50">
     <div className="max-w-screen-lg mx-auto px-3 pb-2 pt-16">
-      <div className="footer-trial container grid grid-cols-1 gap-2 py-4">
+      <div className="footer-trial container py-4">
         <div className="footer-left mx-auto text-center">
           <div className="text-4xl text-white uppercase">Ready to dive in?</div>
           <div className="text-4xl text-yellow-300 uppercase">
@@ -41,12 +41,12 @@ const Footer = () => (
         <div></div>
       </div>
 
-      <div className="footer grid grid-cols-5 gap-4 mt-32">
-        <div className="col-span-2">
+      <div className="footer mt-32 mx-auto flex flex-wrap">
+        <div className="md:w-full lg:w-1/4 p-2">
           <Logo />
         </div>
 
-        <div className="text-left">
+        <div className="text-left lg:w-1/4 md:w-1/2 w-full p-4">
           <div className="footer-title">HIDEBROWSER</div>
           <ul className="">
             <li>
@@ -59,7 +59,8 @@ const Footer = () => (
             </li>
           </ul>
         </div>
-        <div className="text-left">
+
+        <div className="text-left lg:w-1/4 md:w-1/2 w-full p-4">
           <div className="footer-title">Support</div>
 
           <ul>
@@ -77,7 +78,8 @@ const Footer = () => (
             </li>
           </ul>
         </div>
-        <div>
+
+        <div className="lg:w-1/4 md:w-1/2 w-full p-4">
           <div className="footer-title">Legal</div>
           <ul>
             <li>
@@ -90,6 +92,7 @@ const Footer = () => (
           </ul>
         </div>
       </div>
+
       <div className="mt-4 pt-4">
         Copyright ©2021 Hidebrowser Inc. All rights reserved
       </div>
