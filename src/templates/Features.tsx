@@ -88,7 +88,7 @@ const Features = () => (
             <div className="text-center">Using physical devices or VPS</div>
           </div>
 
-          <img alt="" src="assets/images/oldway.svg" />
+          <img alt="" src="/assets/images/oldway.svg" />
         </div>
         <div className="mx-auto">
           <div className="pb-4">
@@ -98,7 +98,7 @@ const Features = () => (
             <div className="text-center">Using device simulation</div>
           </div>
 
-          <img alt="" src="assets/images/newway.svg" />
+          <img alt="" src="/assets/images/newway.svg" />
         </div>
       </div>
     </div>
@@ -130,7 +130,7 @@ const Features = () => (
           </div>
         </div>
         <div className="mx-auto">
-          <img alt="" src="assets/images/fingerprintText.webp" />
+          <img alt="" src="/assets/images/fingerprintText.webp" />
         </div>
       </div>
     </div>
@@ -179,10 +179,10 @@ const Features = () => (
               <img src="https://lcdn.gologin.com/img/glslider1.webp" alt="" />
             </SwiperSlide> */}
             <SwiperSlide>
-              <img src="assets/images/hb-2.png" alt="" />
+              <img src="/assets/images/hb-2.png" alt="" />
             </SwiperSlide>
             <SwiperSlide>
-              <img src="assets/images/hb-3.png" alt="" />
+              <img src="/assets/images/hb-3.png" alt="" />
             </SwiperSlide>
           </Swiper>
         </div>

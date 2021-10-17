@@ -63,7 +63,7 @@ body {
   --borderWidth: 3px;
   position: relative;
   border-radius: var(--borderWidth);
-  /* z-index: 1; */
+  z-index: 1;
   @apply text-white font-bold;
 }
 

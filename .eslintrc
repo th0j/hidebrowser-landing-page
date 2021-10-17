@@ -60,7 +60,8 @@
         "unused-imports/no-unused-vars": [
           "error",
           { "argsIgnorePattern": "^_" }
-        ]
+        ],
+        "@typescript-eslint/no-unused-expressions": 0
       }
     }
   ]

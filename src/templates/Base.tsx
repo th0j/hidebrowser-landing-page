@@ -8,14 +8,14 @@ import { Navigation } from './Navigation';
 import { Welcome } from './Welcome';
 
 const Base = () => (
-  <div className="antialiased text-gray-600">
+  <div className="text-gray-600">
     <Meta title={AppConfig.title} description={AppConfig.description} />
     <Navigation />
     <Welcome />
 
     <Features />
     {/* <VerticalFeatures /> */}
-    {/* <Banner /> */}
+
     <Footer />
   </div>
 );
