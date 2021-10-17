@@ -52,10 +52,8 @@ const Plan = (props: any) => {
   };
 
   return (
-    <div className="text-gray-900 ">
-      <div
-        className={`relative overflow-hidden p-6 m-4 rounded-lg ${borderColor}`}
-      >
+    <div className="text-gray-900">
+      <div className={`relative overflow-hidden rounded-lg ${borderColor} p-6`}>
         {popular}
         <div className="text-3xl">{props.name}</div>
         {/* <div>For freelanceers that need unique Internet identities</div> */}
@@ -66,7 +64,7 @@ const Plan = (props: any) => {
           </div>
         </div>
         <hr className="my-6 text-gray-300" />
-        <div className="h-80 w-80">{renderFeature()}</div>
+        <div className="h-80">{renderFeature()}</div>
 
         <div className="text-center">
           <a

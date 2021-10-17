@@ -61,8 +61,8 @@ const plans = [
 
 const Main = () => {
   return (
-    <div className="py-16">
-      <div className="container mx-auto items-center justify-center flex flex-col p-8">
+    <div className="py-16 container mx-auto">
+      <div className="flex flex-col items-center justify-center p-8 ">
         <div className="text-3xl text-gray-900 font-bold tracking-wider">
           PLAN & PRICING
         </div>
@@ -71,11 +71,11 @@ const Main = () => {
         </div>
       </div>
 
-      <div className="flex-grow">
-        <div className="container mx-auto items-center justify-center flex">
+      <div>
+        <div className="flex flex-wrap">
           {plans.map((plan, index: number) =>
             index === 1 ? (
-              <div key={plan.name}>
+              <div key={plan.name} className="p-4 xl:w-1/4 md:w-1/2 w-full">
                 <Plan
                   price={plan.price}
                   compareAtPrice={plan.compareAtPrice}
@@ -85,7 +85,7 @@ const Main = () => {
                 ></Plan>
               </div>
             ) : (
-              <div key={plan.name}>
+              <div key={plan.name} className="p-4 xl:w-1/4 md:w-1/2 w-full">
                 <Plan
                   price={plan.price}
                   compareAtPrice={plan.compareAtPrice}
