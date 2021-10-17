@@ -179,10 +179,10 @@ const Features = () => (
               <img src="https://lcdn.gologin.com/img/glslider1.webp" alt="" />
             </SwiperSlide> */}
             <SwiperSlide>
-              <img src="/assets/images/hb-2.png" alt="" />
+              <img src="/assets/images/hb-2.webp" alt="" />
             </SwiperSlide>
             <SwiperSlide>
-              <img src="/assets/images/hb-3.png" alt="" />
+              <img src="/assets/images/hb-3.webp" alt="" />
             </SwiperSlide>
           </Swiper>
         </div>
