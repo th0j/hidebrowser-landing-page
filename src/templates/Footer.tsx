@@ -50,11 +50,12 @@ const Footer = () => (
           <div className="footer-title">HIDEBROWSER</div>
           <ul className="">
             <li>
-              <Link href="#">Pricing</Link>
+              <Link href="/pricing">Pricing</Link>
             </li>
             <li>
-              {' '}
-              <Link href="#">Download</Link>
+              <a href={`/${AppConfig.app_version}`} download>
+                Download
+              </a>
             </li>
           </ul>
         </div>
@@ -66,11 +67,13 @@ const Footer = () => (
               <Link href="#">FAQ</Link>
             </li>
             <li>
-              <Link href="#">Email Support</Link>
+              <Link href="mailto:support@hidebrowser.com">Email Support</Link>
             </li>
 
             <li>
-              <Link href="#">Telegram Support</Link>
+              <Link href="tg://resolve?domain=hidebrowser">
+                Telegram Support
+              </Link>
             </li>
           </ul>
         </div>
