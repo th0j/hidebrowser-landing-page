@@ -41,55 +41,59 @@ const Footer = () => (
         </div>
       </div>
 
-      <div className="footer mt-32 mx-auto flex flex-wrap">
-        <div className="md:w-full lg:w-1/4 p-2">
-          <Logo />
+      <div className="container mx-auto footer mt-32 flex flex-wrap">
+        <div className="md:w-full lg:w-1/2 p-2">
+          <div className="">
+            <Logo />
+          </div>
         </div>
 
-        <div className="text-left lg:w-1/4 md:w-1/2 w-full p-4">
-          <div className="footer-title">HIDEBROWSER</div>
-          <ul className="">
-            <li>
-              <Link href="/pricing">Pricing</Link>
-            </li>
-            <li>
-              <a href={`/${AppConfig.app_version}`} download>
-                Download
-              </a>
-            </li>
-          </ul>
-        </div>
+        <div className="md:w-full lg:w-1/2 flex flex-wrap">
+          <div className="text-left lg:w-1/3 md:w-1/2 p-4">
+            <div className="footer-title">HIDEBROWSER</div>
+            <ul className="">
+              <li>
+                <Link href="/pricing">Pricing</Link>
+              </li>
+              <li>
+                <a href={`/${AppConfig.app_version}`} download>
+                  Download
+                </a>
+              </li>
+            </ul>
+          </div>
 
-        <div className="text-left lg:w-1/4 md:w-1/2 w-full p-4">
-          <div className="footer-title">Support</div>
+          <div className="text-left lg:w-1/3 md:w-1/2 p-4">
+            <div className="footer-title">Support</div>
 
-          <ul>
-            <li>
-              <Link href="#">FAQ</Link>
-            </li>
-            <li>
-              <Link href="mailto:support@hidebrowser.com">Email Support</Link>
-            </li>
+            <ul>
+              <li>
+                <Link href="#">FAQ</Link>
+              </li>
+              <li>
+                <Link href="mailto:support@hidebrowser.com">Email Support</Link>
+              </li>
 
-            <li>
-              <Link href="tg://resolve?domain=hidebrowser">
-                Telegram Support
-              </Link>
-            </li>
-          </ul>
-        </div>
+              <li>
+                <Link href="tg://resolve?domain=hidebrowser">
+                  Telegram Support
+                </Link>
+              </li>
+            </ul>
+          </div>
 
-        <div className="lg:w-1/4 md:w-1/2 w-full p-4">
-          <div className="footer-title">Legal</div>
-          <ul>
-            <li>
-              <Link href="#">Terms of Service</Link>
-            </li>
+          <div className="text-left lg:w-1/3 md:w-1/2 p-4">
+            <div className="footer-title">Legal</div>
+            <ul>
+              <li>
+                <Link href="#">Terms of Service</Link>
+              </li>
 
-            <li>
-              <Link href="#">Privacy Policy</Link>
-            </li>
-          </ul>
+              <li>
+                <Link href="#">Privacy Policy</Link>
+              </li>
+            </ul>
+          </div>
         </div>
       </div>
 
