@@ -54,7 +54,9 @@ const Features = () => (
               <div className="text-3xl font-semibold text-black text-center">
                 THE OLD WAY
               </div>
-              <div className="text-center">Using physical devices or VPS</div>
+              <div className="text-center text-gray-500">
+                Using physical devices or VPS
+              </div>
             </div>
             <div>
               <img alt="" src="/assets/images/oldway.svg" />
@@ -67,7 +69,9 @@ const Features = () => (
               <div className="text-3xl font-semibold text-black text-center">
                 THE NEW WAY
               </div>
-              <div className="text-center">Using device simulation</div>
+              <div className="text-center text-gray-500">
+                Using device simulation
+              </div>
             </div>
             <div>
               <img alt="" src="/assets/images/newway.svg" />

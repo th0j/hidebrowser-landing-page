@@ -14,8 +14,6 @@ const Base = () => (
     <Welcome />
 
     <Features />
-    {/* <VerticalFeatures /> */}
-
     <Footer />
   </div>
 );

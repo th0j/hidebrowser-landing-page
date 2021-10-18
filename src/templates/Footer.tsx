@@ -14,7 +14,7 @@ const Footer = () => (
           <div className="text-3xl text-yellow-300 uppercase">
             Start your free trial today.
           </div>
-          <p className="text-gray-200 text-xl py-4">
+          <p className="text-gray-200 text-lg py-4">
             We have a free 7-day trial period with full access to all functions
           </p>
           <a

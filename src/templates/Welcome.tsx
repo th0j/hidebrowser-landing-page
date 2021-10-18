@@ -7,19 +7,17 @@ const Welcome = () => (
     <div className="container mx-auto px-5 lg:pt-32">
       <div className="text-center w-full flex items-center justify-center flex-col">
         <div className="lg:text-5xl text-2xl text-gray-900 font-bold whitespace-pre-line ">
-          <div className="tracking-widest leading-hero">
-            ANTI DETECT BROWSER
-          </div>
+          <div className="tracking-widest">ANTI DETECT BROWSER</div>
           <div className="text-primary-500 hidden lg:inline">
             To Glide Smoothly and Effortlessly.
           </div>
         </div>
 
-        <div className="lg:text-2xl text-lg my-4">
+        <h5 className="lg:text-xl text-gray-500">
           Create and manage multi-session browsing identities on your computer
-        </div>
+        </h5>
 
-        <div className="flex justify-center flex-col space-y-4 py-6">
+        <div className="flex justify-center flex-col space-y-2 py-8">
           <div>
             <a
               className="inline-flex text-center text-lg py-3 pl-5 pr-5 btn tracking-widest"
@@ -43,7 +41,9 @@ const Welcome = () => (
               Download for Windows
             </a>
           </div>
-          <h6>Fully support Windows, Apple M1 & macOS Big Sur & Monterey!</h6>
+          <h6 className="text-gray-500">
+            Fully support Windows, Apple M1 & macOS Big Sur & Monterey!
+          </h6>
         </div>
       </div>
     </div>
