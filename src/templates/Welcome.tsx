@@ -4,46 +4,46 @@ import { AppConfig } from '../utils/AppConfig';
 
 const Welcome = () => (
   <div className="section-top-a">
-    <div className=""></div>
-    <div className="flex-grow">
-      <div className="container mx-auto flex px-5 pt-32 items-center justify-center flex-col">
-        <div className="text-center xl:w-2/3 md:w-4/5 w-full">
-          <h1 className="text-5xl text-gray-900 font-bold whitespace-pre-line leading-hero">
-            <h1 className="heading">ANTI DETECT BROWSER</h1>
-            <span className="text-primary-500">
-              To Glide Smoothly and Effortlessly.
-            </span>
-          </h1>
-          <div className="text-2xl my-4">
-            Create and manage multi-session browsing identities on your computer
+    <div className="container mx-auto px-5 lg:pt-32">
+      <div className="text-center w-full flex items-center justify-center flex-col">
+        <div className="lg:text-5xl text-2xl text-gray-900 font-bold whitespace-pre-line ">
+          <div className="tracking-widest leading-hero">
+            ANTI DETECT BROWSER
           </div>
+          <div className="text-primary-500 hidden lg:inline">
+            To Glide Smoothly and Effortlessly.
+          </div>
+        </div>
 
-          <div className="flex justify-center flex-col space-y-4 py-6">
-            <div>
-              <a
-                className="inline-flex text-center text-lg py-3 pl-5 pr-5 btn tracking-widest"
-                href={`/${AppConfig.app_version}`}
-                download
+        <div className="lg:text-2xl text-lg my-4">
+          Create and manage multi-session browsing identities on your computer
+        </div>
+
+        <div className="flex justify-center flex-col space-y-4 py-6">
+          <div>
+            <a
+              className="inline-flex text-center text-lg py-3 pl-5 pr-5 btn tracking-widest"
+              href={`/${AppConfig.app_version}`}
+              download
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                className="h-6 w-6 mr-3"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
               >
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  className="h-6 w-6 mr-3"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke="currentColor"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth="2"
-                    d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"
-                  />
-                </svg>
-                Download for Windows
-              </a>
-            </div>
-            <h6>Fully support Windows, Apple M1 & macOS Big Sur & Monterey!</h6>
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth="2"
+                  d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"
+                />
+              </svg>
+              Download for Windows
+            </a>
           </div>
+          <h6>Fully support Windows, Apple M1 & macOS Big Sur & Monterey!</h6>
         </div>
       </div>
     </div>

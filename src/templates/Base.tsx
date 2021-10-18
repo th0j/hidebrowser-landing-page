@@ -8,7 +8,7 @@ import { Navigation } from './Navigation';
 import { Welcome } from './Welcome';
 
 const Base = () => (
-  <div className="text-gray-600">
+  <div>
     <Meta title={AppConfig.title} description={AppConfig.description} />
     <Navigation />
     <Welcome />

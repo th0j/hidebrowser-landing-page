@@ -107,15 +107,11 @@ body {
   border-radius: 15px;
 }
 
-.footer-left {
+/* .footer-left {
   background-repeat: no-repeat;
   background-position: 50% 80%;
   padding-left: 4%;
-}
-
-.heading {
-  @apply tracking-widest;
-}
+} */
 
 .logo {
   margin-right: 10px;

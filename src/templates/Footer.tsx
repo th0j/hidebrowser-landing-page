@@ -5,14 +5,16 @@ import { Logo } from './Logo';
 
 const Footer = () => (
   <div className="bg-gray-50">
-    <div className="max-w-screen-lg mx-auto px-3 pb-2 pt-16">
-      <div className="footer-trial container py-4">
+    <div className="mx-auto px-3 pb-2 pt-16">
+      <div className="footer-trial container py-4 flex items-center justify-center">
         <div className="footer-left mx-auto text-center">
-          <div className="text-4xl text-white uppercase">Ready to dive in?</div>
-          <div className="text-4xl text-yellow-300 uppercase">
+          <div className="text-4xl text-white uppercase lg:inline hidden">
+            Ready to dive in?
+          </div>
+          <div className="text-3xl text-yellow-300 uppercase">
             Start your free trial today.
           </div>
-          <p className="text-gray-200 text-2xl py-4">
+          <p className="text-gray-200 text-xl py-4">
             We have a free 7-day trial period with full access to all functions
           </p>
           <a
@@ -37,8 +39,6 @@ const Footer = () => (
             Download for Windows
           </a>
         </div>
-
-        <div></div>
       </div>
 
       <div className="footer mt-32 mx-auto flex flex-wrap">
@@ -93,7 +93,7 @@ const Footer = () => (
         </div>
       </div>
 
-      <div className="mt-4 pt-4">
+      <div className="mt-4 pt-4 text-sm">
         Copyright ©2021 Hidebrowser Inc. All rights reserved
       </div>
     </div>
