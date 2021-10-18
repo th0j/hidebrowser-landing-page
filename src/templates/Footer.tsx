@@ -6,7 +6,7 @@ import { Logo } from './Logo';
 const Footer = () => (
   <div className="bg-gray-50">
     <div className="mx-auto px-3 pb-2 pt-16">
-      <div className="footer-trial container py-4 flex items-center justify-center">
+      <div className="footer-trial container py-4 mx-auto flex items-center justify-center">
         <div className="footer-left mx-auto text-center">
           <div className="text-4xl text-white uppercase lg:inline hidden">
             Ready to dive in?
